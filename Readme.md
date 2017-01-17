@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Михаил Степанов](https://up.htmlacademy.ru/htmlcss/16/user/246372).
-* Наставник: Александр Григоренко(https://htmlacademy.ru/profile/id15514).
+* Наставник: [Александр Григоренко](https://htmlacademy.ru/profile/id15514).
 
 ---
 
