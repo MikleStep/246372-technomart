@@ -1,0 +1,271 @@
+*{
+	font-style: normal;
+}
+a{
+	text-decoration: none;
+  	color:#000000;
+}
+li{
+  list-style-type: none;
+}
+.head-up{
+	background-color: #293449;
+}
+.head-up a{
+	color: #ffffff;
+}
+.user-navigation{
+	font-size:17px;
+	line-height: 18px;
+}
+h1{
+	font-size: 16px;
+	color: #ee3643;
+	line-height: 23px;
+	font-style: italic;
+}
+main h1{
+	font-size: 30px;
+	color: #32425c;
+	line-height: 30px;
+}
+.phone-number{
+	font-size: 21px;
+	color: #e9292a;
+	line-height: 18px;
+}
+.header-contacts a{
+	color: #e9292a;
+}
+.header-contacts p{
+	font-size: 14px;
+	color: #32425c;
+	line-height: 24px;
+}
+.user-block a{
+	font-size: 21px;
+	line-height: 18px;
+}
+.user-orders, .user-area{
+	font-size: 16px;
+	color: #32425c;
+	line-height: 18px;
+	text-decoration: underline;
+}
+.header-down{
+	background-image: url(../img/header-fon.png);
+}
+.header-down a{
+	font-size: 17px;
+	color: #ffffff; 
+	line-height: 17px;
+}
+.breadcrumbs{
+	font-size: 13px;
+	line-height: 18px;
+}
+.banners-up h3{
+	font-size: 24px;
+	color: #ffffff;
+	line-height: 30px;
+	font-style: bold;
+}
+.banners-up a{
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 18px;
+}
+.slider-item h3{
+	font-size: 36px;
+	color: #ffffff;
+	line-height: 30px;
+	font-style: bold;
+	text-transform: uppercase;
+}
+.slider-item p{
+	font-size: 18px;
+	color: #ffffff;
+	line-height: 24px;
+}
+.slider-item a{
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 18px;
+}
+.banners-down h3{
+	font-size: 24px;
+	color: #ffffff;
+	line-height: 30px;
+	font-style: bold;
+}
+.banners-down a{
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 18px;
+}
+.categories h2{
+	font-size: 30px;
+	color: #32425c;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.categories a{
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 18px;
+}
+.pop-up-buy{
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 18px;
+}
+.pop-up-mark{
+	font-size: 14px;
+	color: #32425c;
+	line-height: 18px;
+}
+.item-name{
+	font-size: 18px;
+	line-height: 20px;
+	font-style: bold;
+}
+.old-price{
+	font-size: 17px;
+	color: #999999;
+	line-height: 18px;
+	text-decoration:line-through;
+}
+.item-btn a{
+	font-size: 17px;
+	color: #ffffff;
+	line-height: 18px;
+	font-style: bold;
+}
+.services-information h2,.items-information h2{
+	font-size: 30px;
+	line-height: 24px;
+}
+.services-information p,.items-information p{
+	font-size: 13px;
+	line-height: 24px;
+}
+.service-navigation a{
+	font-size: 21px;
+	color: #ffffff;
+	line-height: 30px;
+	font-style: bold;
+}
+.service-information h3{
+	font-size: 36px;
+	color: #32425c;
+	line-height: 24px;
+}
+.service-information p{
+	font-size: 13px;
+	line-height: 24px;
+}
+.credit-btn{
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 18px;
+}
+.company h2{
+	font-size: 30px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+.company p{
+	font-size: 13px;
+	line-height:24px;
+}
+.delivery-types li{
+	font-size: 18px;
+	line-height: 20px;
+	list-style-type: disc;
+}
+.company-btn a{
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 18px;
+}
+.pop-up-header{
+	background-color: #ee3643;
+}
+.pop-up-container label{
+	font-size: 18px;
+	line-height: 18px;
+} 
+.pop-up-contacts input{
+	font-size: 13px;
+	color: #999999;
+	line-height: 18px;
+}
+.pop-up-btn input{
+	font-size: 14px;
+	color: #ffffff;
+}
+.filters h2{
+	font-size: 13px;
+	line-height: 18px;
+}
+.filters h3{
+	font-size: 17px;
+	line-height: 30px;
+	font-style: bold;
+}
+.price input{
+	font-size: 17px;
+	line-height: 18px;
+}
+.categories-up label{
+	font-size: 15px;
+	line-height: 20px;
+}
+.categories-down label{
+	font-size: 14px;
+	line-height: 20px;
+}
+.categories-btn label{
+	font-size: 13px;
+	line-height: 18px;
+}
+.sorting{
+	font-size: 13px;
+	line-height: 18px;
+}
+.pop-up-info{
+	font-size: 30px;
+	line-height: 18px;
+}
+.continue input,.checkout input{
+	font-size: 14px;
+	line-height: 18px;
+}
+.checkout input{
+	color: #ffffff;
+}
+.footer-main{
+	background-color: #32425c;
+}
+.footer-second{
+	background-color: #293449;
+}
+.footer-main a, .footer-main p{
+	font-size: 18px;
+	color: #ffffff;
+	line-height: 24px;
+}
+.footer-navigation-down a{
+	color: #ffd180;
+}
+.footer-second, .footer-second a{
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 18px;
+}
+.footer-second a{
+	color: #ffd180;
+}
+*{
+	color:#000000 !importan;
+}
