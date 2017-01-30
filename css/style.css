@@ -18,7 +18,7 @@ li{
 	font-size:17px;
 	line-height: 18px;
 }
-h1{
+header .main-title{
 	font-size: 16px;
 	color: #ee3643;
 	line-height: 23px;
@@ -141,11 +141,11 @@ main h1{
 	line-height: 18px;
 	font-style: bold;
 }
-.services-information h2,.items-information h2{
+.service-up h2,.items-information h2{
 	font-size: 30px;
 	line-height: 24px;
 }
-.services-information p,.items-information p{
+.service-up p,.items-information p{
 	font-size: 13px;
 	line-height: 24px;
 }
@@ -267,5 +267,5 @@ main h1{
 	color: #ffd180;
 }
 *{
-	color:#000000 !importan;
+	color:#000000 !important;
 }

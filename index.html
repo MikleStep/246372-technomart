@@ -2,47 +2,47 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
+    <title>Техномарт</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <link href="css/style.css" rel="stylesheet">
     <header class="header-main">
       <div class="container">
-          <div class="head-up">
-            <div class="header-logo">
-              <a class="logo" href="/"><img src="img/logo.png"></a> 
+        <div class="head-up">
+          <div class="header-logo">
+            <a class="logo" href="/"><img src="img/logo.png"></a> 
+          </div>
+          <div class="user-navigation">
+            <form class="search" action="#" method="get">
+              <input name="s" placeholder="Поиск:" type="search" required>
+            </form>
+            <div class="mark">
+              <a href="#">Закладки:0</a>
             </div>
-            <div class="user-navigation">
-              <form class="search" action="#" method="get">
-                <input name="s" placeholder="Поиск:" type="search" required>
-              </form>
-              <div class="mark">
-                <a href="#">Закладки:0</a>
-              </div>
-              <div class="basket">
-                <a href="#">Корзина:0</a>
-              </div>
-              <div class="checkout">
-                <a href="#">Оформить заказ</a>
-              </div>
+            <div class="basket">
+              <a href="#">Корзина:0</a>
+            </div>
+            <div class="checkout">
+              <a href="#">Оформить заказ</a>
             </div>
           </div>
-        
-          <div class="heder-middle">
-            <div class="header-information">
-              <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-            </div>
-            <div class="header-contacts">
-              <div class="phone-number">
-                <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-              </div>
-              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            </div>
-            <div class="user-block">
-              <a class="login" href="#">Войти</a>
-              <a class="check-in" href="#">Регистрация</a>
-            </div>
+        </div>
+
+        <div class="heder-middle">
+          <div class="header-information">
+            <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
           </div>
+          <div class="header-contacts">
+            <div class="phone-number">
+              <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </div>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+          <div class="user-block">
+            <a class="login" href="#">Войти</a>
+            <a class="check-in" href="#">Регистрация</a>
+          </div>
+        </div>
 
         <nav class="header-down">
           <ul>
@@ -156,10 +156,10 @@
                 </a>
                 <div class="pop-up">
                   <div class="pop-up-content">
-                      <a class="pop-up-buy" href="#">Купить</a>
-                      <a class="pop-up-mark" href="#">В закладки</a>
-                    </div>
+                    <a class="pop-up-buy" href="#">Купить</a>
+                    <a class="pop-up-mark" href="#">В закладки</a>
                   </div>
+                </div>
                 <p class="item-name">Перфоратор BOSCH BFG 3000</p>
                 <p class="old-price">22500 Р.</p>
                 <div class="item-btn">
@@ -237,119 +237,120 @@
         </div>
 
         <div class="service">
-          <div class="services-information">
+          <div class="service-up">
             <h2>Сервисы</h2>
             <p>Хороший интернет магазин отличается от плохого нетолько ценами!
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
 
-          <div class="service-navigation">
-            <ul>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Кредит</a>  </li>
-            </ul>
-          </div>
+          <div class="service-down">
+            <div class="service-navigation">
+              <ul>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Кредит</a>  </li>
+              </ul>
+            </div>
 
-          <div class="service-information">
-            <div class="service-delivery">
-              <h3>Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо зарабатываем,
-              поднимая его на ваш этаж</p>
-            </div>
-            <div class="service-guatantee">
-              <h3>Гарантия</h3>
-              <p>Если купленный у нас товар поломается или заискрит,
-              а также в случае пожара, спровоцированного его возгаранием,
-              вы всегда можете быть уверены в нашей гарантии. 
-              Мы обменяем сгоревший товар на новый.<br> 
-              Дом уж восстановите как-нибудь сами.</p>
-            </div>
-            <div class="service-credit">
-              <h3>Кредит</h3>
-              <p>Залезть в долговую яму стало проще! 
-              Кредитные консультанты придут вам на помощь.</p>
-              <div class="credit-btn">
-                <a href="#">Отправить заявку</a>
+            <div class="service-information">
+              <div class="service-delivery">
+                <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо зарабатываем,
+                поднимая его на ваш этаж</p>
+              </div>
+              <div class="service-guatantee">
+                <h3>Гарантия</h3>
+                <p>Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его возгаранием,
+                вы всегда можете быть уверены в нашей гарантии. 
+                Мы обменяем сгоревший товар на новый.<br> 
+                Дом уж восстановите как-нибудь сами.</p>
+              </div>
+              <div class="service-credit">
+                <h3>Кредит</h3>
+                <p>Залезть в долговую яму стало проще! 
+                Кредитные консультанты придут вам на помощь.</p>
+                <div class="credit-btn">
+                  <a href="#">Отправить заявку</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <section class="company">
-          <div class="company-information">
-            <h2>Компания "Техномарт"</h2>
-            <p>Настоящий мужской шоппинг начитнается здесь! 
-            Огромный выбор товаров для ремонта и строительства
-            не оставит равнодушным любителей сэкономить на гастарбайтерах.
-            </p>
-            <p>Мы можем доставить ваш товар в самые отдельные точки России
-            Техномарт работает со сногими транспортными компаниями:</p>
+          <div class="company-page">
+            <div class="company-information">
+              <h2>Компания "Техномарт"</h2>
+              <p>Настоящий мужской шоппинг начитнается здесь! 
+              Огромный выбор товаров для ремонта и строительства
+              не оставит равнодушным любителей сэкономить на гастарбайтерах.
+              </p>
+              <p>Мы можем доставить ваш товар в самые отдельные точки России
+              Техномарт работает со сногими транспортными компаниями:</p>
+            </div>
+            <ul class="delivery-types">
+              <li><a href="#">Деловые линии</a></li>
+              <li><a href="#">Авторейдинг</a></li>
+              <li><a href="#">ЖелДорЭкспедиция</a></li>
+            </ul>
+            <div class="company-btn">
+              <a href="#">Подробнее о компании</a>
+            </div>
           </div>
-          <ul class="delivery-types">
-            <li><a href="#">Деловые линии</a></li>
-            <li><a href="#">Авторейдинг</a></li>
-            <li><a href="#">ЖелДорЭкспедиция</a></li>
-          </ul>
-          <div class="company-btn">
-            <a href="#">Подробнее о компании</a>
-          </div>
-        
-      
+
 
           <div class="main-contacts">
-            <div class="container">
-              <div class="contacts">
-                <h2>Контакты</h2>
-                <p>Вы можете забрать товар сами,
-                заехав в наш офис.</p>
+            <div class="contacts">
+              <h2>Контакты</h2>
+              <p>Вы можете забрать товар сами,
+              заехав в наш офис.</p>
+            </div>
+            <div class="map">
+              <div class="map-main">
+                <a href="#"><img src="img/map.jpg"> </a>
               </div>
-              <div class="map">
-                <div class="map-main">
-                  <a href="#"><img src="img/map.jpg"> </a>
+              <div class="map-pop-up">
+                <div class="map-close">
+                  <a href="#">close</a>
                 </div>
-                <div class="map-pop-up">
-                  <div class="map-close">
-                    <a href="#">close</a>
-                  </div>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651568!2d30.320894615867413!3d59.938794181876276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1485442931511" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
-                  </iframe>
-                </div>
-              </div>
-              <div class="feedback">
-                <div class="company-btn">
-                  <a href="#">Заблудились? Напишите нам!</a>
-                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651568!2d30.320894615867413!3d59.938794181876276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1485442931511" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+                </iframe>
               </div>
             </div>
-          </section>
+            <div class="feedback">
+              <div class="company-btn">
+                <a href="#">Заблудились? Напишите нам!</a>
+              </div>
+            </div>
+          </div>
+        </section>
 
-          <div class="feedback-pop-up">
-            <div class="pop-up-header"></div>
-            <div class="pop-up-container">
-              <div class="pop-up-close">
-                <a href="#">close</a>
-              </div>
-              <form class="pop-up-contacts" action="#" method="post">
-                <div class="pop-up-name">
-                  <label for="name">Ваше имя:</label>  
-                  <input type="text" name="name" value="Представьтесь, пожалуйста">
-                </div>
-                <div class="pop-up-email">
-                  <label for="email">Ваш e-mail:</label>
-                  <input type="text" name="email" value="Для отправки ответа">
-                </div>
-                <div class="pop-up-letter">
-                  <label for="letter"> Текст письма:</label>
-                  <input type="textarea" name="letter" value="В свободной форме">
-                </div>
-                <div class="pop-up-btn">
-                  <input type="submit" name="send" value="Отправить">
-                </div>
-              </form>
+        <div class="feedback-pop-up">
+          <div class="pop-up-header"></div>
+          <div class="pop-up-container">
+            <div class="pop-up-close">
+              <a href="#">close</a>
             </div>
+            <form class="pop-up-contacts" action="#" method="post">
+              <div class="pop-up-name">
+                <label for="name">Ваше имя:</label>  
+                <input type="text" name="name" value="Представьтесь, пожалуйста">
+              </div>
+              <div class="pop-up-email">
+                <label for="email">Ваш e-mail:</label>
+                <input type="text" name="email" value="Для отправки ответа">
+              </div>
+              <div class="pop-up-letter">
+                <label for="letter"> Текст письма:</label>
+                <input type="textarea" name="letter" value="В свободной форме">
+              </div>
+              <div class="pop-up-btn">
+                <input type="submit" name="send" value="Отправить">
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -393,9 +394,9 @@
             Все права защищены</p>
           </div>
           <div class="footer-social">
-              <a class="social-btn social-btn-vk" href="#"><img src="img/v.png"> </a>
-              <a class="social-btn social-btn-fb" href="#"><img src="img/f.png"> </a>
-              <a class="social-btn social-btn-inst" href="#"><img src="img/ins.png"> </a>
+            <a class="social-btn social-btn-vk" href="#"><img src="img/v.png"> </a>
+            <a class="social-btn social-btn-fb" href="#"><img src="img/f.png"> </a>
+            <a class="social-btn social-btn-inst" href="#"><img src="img/ins.png"> </a>
           </div>
           <div class="footer-designed-1">
             <p class="e-mail">Обратная связь</p>
