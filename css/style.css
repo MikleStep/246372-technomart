@@ -111,7 +111,7 @@ body{
 .search input:focus::-webkit-input-placeholder{
 	color: #000000;
 }
-.search:focus::after + input{
+.search input:focus ~ .search::after{
 	background-position:-10px -719px;
 	background-color: #000000;
 }
@@ -529,8 +529,8 @@ main h1{
     width: 5px;
     height: 5px;
     margin: 0 3px;
-    background: white;
-    border: 3px solid white;
+    background-color: #ffffff;
+    border: 3px solid #ffffff;
     vertical-align: top;
     border-radius: 50%;
     cursor: pointer;
@@ -541,13 +541,43 @@ main h1{
 }
 #btn-1:checked ~ .slide-controls label[for="btn-1"],
 #btn-2:checked ~ .slide-controls label[for="btn-2"]{ 
-    background:#ee3643;
+    background-color:#ee3643;
 }
-#btn-1:checked ~ .slide:nth-child(1){ 
+#btn-1:checked ~ .slides .slide:nth-child(1){ 
     display: block;
 }
-#btn-2:checked ~ .slide:nth-child(2){ 
+#btn-2:checked ~ .slides .slide:nth-child(2){ 
     display: block;
+}
+.slide-switch{
+	position: absolute;
+    bottom: 112px;
+    left: 120px;
+    width: 580px;
+    height: 50px;
+    margin-left: -100px;
+    text-align: center;
+    z-index: 1001;
+}
+.slide-next{
+	position: absolute;
+    width: 25px;
+    height: 50px;
+    cursor: pointer;
+    right: 0;
+
+    background: transparent url(../img/sprite.png);
+	background-position: -10px -655px;
+}
+.slide-prev{
+	position: absolute;
+    width: 25px;
+    height: 50px;
+    cursor: pointer;
+    left: 0;
+
+    background: transparent url(../img/sprite.png);
+	background-position: -10px -595px;
 }
 .banners-down{
 	width: 300px;
@@ -1009,11 +1039,6 @@ main h1{
 	min-height: 380px;
 	float: left;
 }
-.categories{
-	width: 940px;
-	float: left;
-	margin-bottom: 20px;
-}
 .categories h2{
 	font-size: 30px;
 	color: #32425c;
@@ -1036,6 +1061,7 @@ main h1{
 	float: left;
 	min-height: 60px;
 	padding-top: 30px;
+	margin-bottom: 20px;
 
 	background-color: #f7f3ec;
 }
@@ -1120,43 +1146,12 @@ main h1{
 	margin: 0;
 }
 .service-down{
+	position: relative;
 	width: 940px;
 	min-height: 250px;
 	float: left;
 }
-.service-navigation{
-	position: relative;
-	width: 240px;
-	min-height: 180px;
-	float: left;
-	margin-right: 60px;
-	z-index: 5;
-}
-.service-navigation ul{
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
-}
-.service-navigation li{
-	min-height: 45px;
-	width: 220px;
-	padding-top: 15px;
-	padding-left: 20px;
-
-	background-color: #32425c;
-	border-top: 1px solid #405069;
-	border-bottom: 1px solid #293449;
-}
-.service-navigation a{
-	font-size: 21px;
-	color: #ffffff;
-	line-height: 30px;
-	font-weight: bold;
-	text-transform: none;
-	font-family: Cuprum;
-	text-decoration: none;
-}
-.service-navigation::after{
+.service-controls::after{
 	content: "";
 	position: absolute;
 	width: 10px;
@@ -1167,38 +1162,60 @@ main h1{
 
 	background-image: url(../img/navigation-border.png);
 }
-.service-information{
-	width: 640px;
-	min-height: 280px;
+.service-controls{
+	position: absolute;
+	width: 240px;
+	min-height: 180px;
 	float: left;
-}	
-.service-delivery{
+	margin-right: 60px;
+	z-index: 5;
+}
+.service-controls label{
+	display: inline-block;
+	height: 45px;
+	width: 220px;
+	padding-top: 15px;
+	padding-left: 20px;
+
+	background-color: #32425c;
+	border-top: 1px solid #405069;
+	border-bottom: 1px solid #293449;
+
+	font-size: 21px;
+	color: #ffffff;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: none;
+	font-family: Cuprum;
+	text-decoration: none;
+	cursor: pointer;
+}
+.service-controls label:hover{
+	background-color: #293449;
+}
+.service-down input[type=radio] {
+    position: absolute;
+    opacity: 0;
+}
+#service-1:checked ~ .service-controls label[for="service-1"],
+#service-2:checked ~ .service-controls label[for="service-2"]
+{ 
+    background-color: #ffffff;
+    color: #32425c;
+    border-top: none;
+}
+#service-3:checked ~ .service-controls label[for="service-3"]{
+	background-color: #ffffff;
+    color: #32425c;
+    border: none;
+}
+.service-information{
 	position: relative;
 	width: 640px;
-	min-height: 280px;
+	min-height: 260px;
+	left: 300px;
 	float: left;
-}
-.service-delivery::after{
-	content: "";
-	position: absolute;
-	width: 470px;
-	height: 260px;
-	right: 0;
-	bottom: 0;
-	background: url(../img/service-background-1.png);
-}
-.service-guatantee{
-	width: 640px;
-	min-height: 280px;
-	float: left;
-	display: none;
-}
-.service-credit{
-	width: 640px;
-	min-height: 280px;
-	float: left;
-	display: none;
-}
+}	
 .service-information h3{
 	font-size: 36px;
 	color: #32425c;
@@ -1210,6 +1227,49 @@ main h1{
 .service-information p{
 	font-size: 13px;
 	line-height: 24px;
+}
+.service-item{
+	position: absolute;
+	width: 640px;
+	min-height: 260px;
+	display: none;
+}
+.service-item:nth-child(1)::after{
+	content: "";
+	position: absolute;
+	width: 470px;
+	height: 260px;
+	right: 0;
+	bottom: 20px;
+	background: url(../img/service-background-1.png);
+}
+
+.service-item:nth-child(2)::after{
+	content: "";
+	position: absolute;
+	width: 470px;
+	height: 260px;
+	right: -80px;
+	bottom: 20px;
+	background: url(../img/service-background-2.png);
+}
+.service-item:nth-child(3)::after{
+	content: "";
+	position: absolute;
+	width: 470px;
+	height: 260px;
+	right: 0;
+	bottom: 20px;
+	background: url(../img/service-background-3.png);
+}
+#service-1:checked ~ .service-information .service-item:nth-child(1){ 
+    display: block;
+}
+#service-2:checked ~ .service-information .service-item:nth-child(2){ 
+    display: block;
+}
+#service-3:checked ~ .service-information .service-item:nth-child(3){ 
+    display: block;
 }
 .credit-btn{
 	width: 195px;
@@ -1225,6 +1285,14 @@ main h1{
 	font-size: 14px;
 	color: #ffffff;
 	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.credit-btn:hover{
+	background-color: #ca2c37
+}
+.credit-btn:active{
+	background-color: #ba2732
 }
 .company{
 	width: 100%;
