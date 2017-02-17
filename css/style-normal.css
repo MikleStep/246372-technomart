@@ -1871,6 +1871,9 @@ footer{
 	line-height: 18px;
 	text-transform: uppercase;
 }
+.sorting h3{
+	font-weight: normal;
+}
 .sorting ul{
 	padding-bottom: 5px;
 }
