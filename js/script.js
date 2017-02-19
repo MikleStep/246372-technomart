@@ -9,7 +9,6 @@ var checkoutWindow = document.querySelector(".pop-up");
 var closeCheckout = document. querySelector(".pop-up-close");
 var continueShoping = document.querySelector(".continue");
 
-
 openFeedback.addEventListener("click", function(event) {
 	event.preventDefault();
 	feedbackPopup.classList.add("feedback-show");
@@ -23,7 +22,7 @@ closeFeedback.addEventListener("click", function(event){
 	function timer(){
 		feedbackPopup.classList.remove("feedback-show");
 	}
-	setTimeout(timer, 300);
+	setTimeout(timer, 450);
 	feedbackPopup.classList.remove("animation-open");        
 });
 
@@ -40,7 +39,7 @@ closeMap.addEventListener("click", function(event){
 	function timer(){
 		mapPopup.classList.remove("map-show");
 	}
-	setTimeout(timer, 300);
+	setTimeout(timer, 450);
 	mapPopup.classList.remove("animation-open");     
 });
 for (var i = 0; i < openCheckout.length; i++){
@@ -58,7 +57,7 @@ closeCheckout.addEventListener("click", function(event){
 	function timer(){
 		checkoutWindow.classList.remove("animation-open");
 	}
-	setTimeout(timer, 300);
+	setTimeout(timer, 450);
 	checkoutWindow.classList.add("animation-close");
 });
 
