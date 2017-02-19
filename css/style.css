@@ -7,8 +7,9 @@ body {
 }
 header, 
 main, 
-footer {
-	min-width: 980px;
+footer,
+.header-background{
+	min-width: 1000px;
 }
 .clearfix::after {
   content: "";
@@ -30,7 +31,7 @@ footer {
 .header-main {
 	background-color: #f1f5f7;
 	min-height: 320px;
-	min-width: 960px;
+	min-width: 1000px;
 }
 .header-main a {
 	text-decoration: none;
@@ -38,7 +39,8 @@ footer {
 .header-background {
 	background-color: #293449;
 
-	height: 40px; 
+	height: 40px;
+	min-width: 1000px; 
 }
 .header-up {
 	width: 940px;
@@ -494,6 +496,7 @@ footer {
 }
 .footer-main {
 	width: 100%;
+	min-width: 1000px;
 	min-height: 190px;
 	float: left;
 	background-color: #32425c;
@@ -608,6 +611,7 @@ footer-navigation-down a:active {
 }
 .footer-second {
 	width: 100%;
+	min-width: 1000px;
 	float: left;
 	padding-top: 35px;
 
