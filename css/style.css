@@ -6,7 +6,8 @@ body {
 	font-family: Cuprum, Arial, Helvetica,  sans-serif;
 }
 header, 
-main {
+main, 
+footer {
 	min-width: 980px;
 }
 .clearfix::after {
@@ -488,6 +489,7 @@ footer ul {
 }
 footer {
 	width: 100%;
+	min-width: 980px;
 	min-height: 300px;
 	float: left
 }
@@ -1043,9 +1045,9 @@ footer-navigation-down a:active {
 .shop-item {
     position: relative;
     display: inline-block;
-    width: 215px;
-    min-height: 320px;
-    margin-right: 24px;
+    width: 217px;
+    min-height: 316px;
+    margin-right: 21px;
     margin-bottom: 20px;
     vertical-align: top;
 
@@ -1059,6 +1061,7 @@ footer-navigation-down a:active {
 .shop-item:last-child {
 	margin-right: 0;
 }
+
 .flag {
     position: absolute;
     top: -1px;
@@ -1089,13 +1092,14 @@ footer-navigation-down a:active {
     font-size: 18px;
 }
 .item-discount {
-    min-height: 15px;
+    min-height: 18px;
     margin-top: 10px;
     margin-bottom: 8px;
 
     color: #999999;
     text-decoration: line-through;
 }
+
 .item-discount p {
 	font-size: 17px;
 }
@@ -1110,6 +1114,7 @@ footer-navigation-down a:active {
     color: #ffffff;
     background: #ee3643;
     border-radius: 3px;
+    font-weight: bold;
 }
 .item-price::after {
     content: "";
@@ -1749,7 +1754,7 @@ footer-navigation-down a:active {
 	background: #d7dcde;
 }
 .range-controls .bar {
-	width: 70%;
+	width: 83%;
 	height: 2px;
 
 	background: #00ca74;
@@ -1772,7 +1777,7 @@ footer-navigation-down a:active {
 }
 
 .range-controls .toggle-max {
-  left: 145px;
+  left: 159px;
 }
 .price-controls {
 	position: relative;
@@ -1861,7 +1866,7 @@ footer-navigation-down a:active {
 	width: 220px;
 	min-height: 130px;
 	float: left;
-	margin-bottom: 52px;
+	margin-bottom: 42px;
 }
 .filter-down label {
 	font-size: 14px;
@@ -1871,6 +1876,7 @@ footer-navigation-down a:active {
 	width: 220px;
 	min-height: 80px;
 	float: left;
+	margin-top: -1px;
 }
 .filter-type li {
 	margin-bottom: 15px;
@@ -2030,7 +2036,7 @@ footer-navigation-down a:active {
 	width: 710px;
 	min-height: 1000px;
 	float: left;
-	margin-bottom: 30px;
+	margin-bottom: 29px;
 
 	font-size: 0;
 }
@@ -2060,8 +2066,8 @@ footer-navigation-down a:active {
 	color: #ffffff;
 }
 .page {
-	width: 37px;
-	height: 28px;
+	width: 35px;
+	height: 27px;
 	float: left;
 	margin-right: 8px;
 	padding-top: 8px;
@@ -2071,7 +2077,7 @@ footer-navigation-down a:active {
 	text-align: center;
 }
 .next-page {
-	width: 134px;
+	width: 137px;
 	height: 28px;
 	float: left;
 	margin-right: 10px;
