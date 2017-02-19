@@ -90,14 +90,19 @@ main {
 	outline: none;
 	border: none;
 }
+.search input::-moz-placeholder {
+	color: #ffffff;	
+}
+.search input:-moz-placeholder {
+	color: #ffffff;	
+}
+.search input:-ms-input-placeholder {
+	color: #ffffff;	
+}
 .search input::-webkit-input-placeholder {
 	color: #ffffff;
 	
 }
-.search input::-moz-placeholder {
-	color: #ffffff;	
-}
-
 .search input:hover {
 	background-color: #212a3a;
 }
@@ -119,10 +124,16 @@ main {
 .search input:focus {
 	background-color: #ffffff;
 }
-.search input:focus::-webkit-input-placeholder {
+.search input:focus::-moz-placeholder {
 	color: #000000;
 }
-.search input:focus::-moz-placeholder {
+.search input:focus:-moz-placeholder {
+	color: #000000;	
+}
+.search input:focus:-ms-input-placeholder {
+	color: #000000;
+}
+.search input:focus::-webkit-input-placeholder {
 	color: #000000;
 }
 .search input:focus ~ .search-icon {
@@ -212,7 +223,7 @@ main {
 .header-middle {
 	width: 895px;
 	min-height: 90px;
-	margin-top: 36px;
+	margin-top: 38px;
 	padding-left: 60px;
 	margin-bottom: 23px;
 	padding-right: 10px;
@@ -695,7 +706,7 @@ footer-navigation-down a:active {
 .banners {
 	width: 950px;
 	min-height: 410px;
-	margin-top: 56px;
+	margin-top: 57px;
 	margin-bottom: 54px;
 	padding-left: 10px; 
 }
@@ -708,7 +719,7 @@ footer-navigation-down a:active {
 }
 .materials {
 	width: 300px;
-	min-height: 120px;
+	min-height: 123px;
 	float: left;
 	margin-right: 20px;
 
@@ -716,7 +727,7 @@ footer-navigation-down a:active {
 }
 .tool {
 	width: 300px;
-	min-height: 120px;
+	min-height: 123px;
 	float: left;
 	margin-right: 20px;
 
@@ -724,7 +735,7 @@ footer-navigation-down a:active {
 }
 .equipment {
 	width: 300px;
-	min-height: 120px;
+	min-height: 123px;
 	float: left;
 
 	background-image: url(../img/equipment.png);
@@ -931,7 +942,7 @@ footer-navigation-down a:active {
 }
 .sale {
 	width: 300px;
-	min-height: 125px;
+	min-height: 123px;
 	float: left;
 	margin-bottom: 20px; 
 
@@ -939,7 +950,7 @@ footer-navigation-down a:active {
 }
 .delivery {
 	width: 300px;
-	min-height: 122px;
+	min-height: 123px;
 	float: left;
 
 	background-image: url(../img/delivery.png);
@@ -994,7 +1005,7 @@ footer-navigation-down a:active {
 	float: left;
 	min-height: 63px;
 	padding-top: 23px;
-	margin-bottom: 18px;
+	margin-bottom: 21px;
 	margin-left: 10px;
 
 	background-color: #f7f3ec;
@@ -1767,7 +1778,7 @@ footer-navigation-down a:active {
 	position: relative;
 }
 .price-controls .min-price,
-price-controls .max-price {
+.price-controls .max-price {
   font-size: 16px;
   width: 95px;
   height: 40px;
@@ -1815,11 +1826,11 @@ price-controls .max-price {
 	list-style: none;
 }
 .filter-producers input,
-filter-type input {
+.filter-type input {
   display: none;
 }
 .filter-producers input + label,
-filter-type input + label {
+.filter-type input + label {
   color: #000000;
   cursor: pointer;
 }
