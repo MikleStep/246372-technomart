@@ -5,8 +5,8 @@
     <title>Техномарт:Каталог товаров</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style-normal.css" rel="stylesheet">
   </head>
   <body>
@@ -354,29 +354,6 @@
         </div>
       </form>
     </div>
-    <script>
-      var openCheckout = document.querySelector(".buy");
-      var checkoutWindow = document.querySelector(".pop-up");
-      var closeCheckout = document. querySelector(".pop-up-close");
-      var continueShoping = document.querySelector(".continue");
-      openCheckout.addEventListener("click", function(event){
-      event.preventDefault();
-      checkoutWindow.classList.add("checkout-show");
-      checkoutWindow.classList.add("animation-open");
-      checkoutWindow.classList.remove("animation-close");
-      });
-      closeCheckout.addEventListener("click", function(event){
-      event.preventDefault();
-      checkoutWindow.classList.remove("checkout-show");
-      checkoutWindow.classList.remove("animation-open");
-      checkoutWindow.classList.add("animation-close");
-      });
-      continueShoping.addEventListener("click", function(event){
-      event.preventDefault();
-      checkoutWindow.classList.remove("checkout-show");
-      checkoutWindow.classList.remove("animation-open");
-      checkoutWindow.classList.add("animation-close");
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
