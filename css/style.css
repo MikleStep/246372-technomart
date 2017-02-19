@@ -94,6 +94,10 @@ main {
 	color: #ffffff;
 	
 }
+.search input::-moz-placeholder {
+	color: #ffffff;	
+}
+
 .search input:hover {
 	background-color: #212a3a;
 }
@@ -116,6 +120,9 @@ main {
 	background-color: #ffffff;
 }
 .search input:focus::-webkit-input-placeholder {
+	color: #000000;
+}
+.search input:focus::-moz-placeholder {
 	color: #000000;
 }
 .search input:focus ~ .search-icon {
