@@ -666,7 +666,7 @@ body {
 	padding-top: 3px;
 }
 .footer-designed-2 p,
-.footer-designed-1 p{
+.footer-designed-1 p {
 	margin-bottom: 0px;
 	margin-top: 14px;
 }
@@ -805,7 +805,7 @@ body {
 	display: none;
 }
 .slide-1 img,
-.slide-2 img{
+.slide-2 img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -835,7 +835,7 @@ body {
 	cursor: pointer;
 	z-index: 1000;
 }
- .slider-control-1{
+.slider-control-1 {
  	margin-left: -16px;
 }
 .slider input[type=radio] {
@@ -1013,7 +1013,7 @@ body {
 .shop-item:last-child {
 	margin-right: 0;
 }
-.shop-items .shop-item:nth-child(3){
+.shop-items .shop-item:nth-child(3) {
 	margin-right: 21px;
 }
 .flag {
@@ -1288,7 +1288,7 @@ body {
 .service-controls a:hover {
 	background-color: #293449;
 }
-.service-controls .service-3{
+.service-controls .service-3 {
 	border-bottom: none;
 }
 .service-information {
@@ -2369,10 +2369,10 @@ body {
 	background-color: #ba2732;
 }
 /*JS*/
-.service-show{
+.service-show {
 	display: block;
 }
-.service-controls .active-page{
+.service-controls .active-page {
 	background-color: #ffffff;
 	color: #32425c;
 	border-top: none;
