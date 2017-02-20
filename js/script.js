@@ -8,6 +8,13 @@ var openCheckout = document.querySelectorAll(".buy");
 var checkoutWindow = document.querySelector(".pop-up");
 var closeCheckout = document. querySelector(".pop-up-close");
 var continueShoping = document.querySelector(".continue");
+var serviceBtn1 = document.querySelector(".service-1");
+var serviceBtn2 = document.querySelector(".service-2");
+var serviceBtn3 = document.querySelector(".service-3");
+var serviceShow1 = document.querySelector(".service-item-1");
+var serviceShow2 = document.querySelector(".service-item-2");
+var serviceShow3 = document.querySelector(".service-item-3");
+
 
 openFeedback.addEventListener("click", function(event) {
 	event.preventDefault();
@@ -66,4 +73,34 @@ continueShoping.addEventListener("click", function(event){
 	checkoutWindow.classList.remove("checkout-show");
 	checkoutWindow.classList.remove("animation-open");
 	checkoutWindow.classList.add("animation-close");
+});
+
+serviceBtn1.addEventListener("click", function(event){
+	event.preventDefault();
+	serviceBtn1.classList.add("active-page");
+	serviceBtn2.classList.remove("active-page");
+	serviceBtn3.classList.remove("active-page");
+	serviceShow1.classList.add("service-show");
+	serviceShow2.classList.remove("service-show");
+	serviceShow3.classList.remove("service-show");
+});
+
+serviceBtn2.addEventListener("click", function(event){
+	event.preventDefault();
+	serviceBtn1.classList.remove("active-page");
+	serviceBtn2.classList.add("active-page");
+	serviceBtn3.classList.remove("active-page");
+	serviceShow1.classList.remove("service-show");
+	serviceShow2.classList.add("service-show");
+	serviceShow3.classList.remove("service-show");
+});
+
+serviceBtn3.addEventListener("click", function(event){
+	event.preventDefault();
+	serviceBtn1.classList.remove("active-page");
+	serviceBtn2.classList.remove("active-page");
+	serviceBtn3.classList.add("active-page");
+	serviceShow1.classList.remove("service-show");
+	serviceShow2.classList.remove("service-show");
+	serviceShow3.classList.add("service-show");
 });
